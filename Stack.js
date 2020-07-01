@@ -41,13 +41,32 @@ class Stack {
         return node;
     }
 
-    display(){
+    displayreverse(){
         let node = this.top;
         while(node!==null)
         {
             console.log(node.data);
             node= node.next;
         }
+    }
+    display(){
+        let node = this.top;
+        let display=[];
+        let count= 0;
+ 
+
+        while(node!==null)
+        {
+          display[count]=node.data;
+            node= node.next;
+            count++;
+        }
+
+        for(let i =display.length-1; i>=0;i--)
+        {
+            console.log(display[i]);
+        }
+      
     }
    isEmpty(){
 
@@ -58,7 +77,6 @@ class Stack {
         }
         return false;
     }
-
 
 }
 
