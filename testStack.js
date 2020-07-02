@@ -51,12 +51,25 @@ function sortStack(input)
     return tmpStack; 
 } 
 
+function displayQueue(ls){
+    let currNode = ls.head;
+    
+    console.log(currNode.value);
+    
+    while(currNode.next!==null){
+        //console.log(currNode.head.value);
+        currNode=currNode.next;
+        console.log(currNode.value);
+    }
+    
+    }
+
 function stackStuff(){
     
     //let emptyStack = new Stack();
   
     let starTrek = new Stack();
-  
+  /*
     starTrek.push("Kirk");
     starTrek.push("Spock");
     starTrek.push("Mccoy");
@@ -68,7 +81,7 @@ function stackStuff(){
     starTrek.display();
     /*console.log("it is "+isPalindrome("allan")+" that it is a palindrome");
 
-*/
+
     let stackToSort = new Stack();
 
     stackToSort.push(2);
@@ -81,7 +94,7 @@ function stackStuff(){
     sortedStack= sortStack(stackToSort);
     console.log("sorted:");
   sortedStack.display();
-
+*/
 }
 
 
