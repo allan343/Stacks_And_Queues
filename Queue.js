@@ -37,6 +37,23 @@ dequeue() {
            }
            return node.value;
        }
+
+       peek(){
+
+        const node = this.first;
+        return node;
+    }
+
+    isEmpty(){
+
+        const node = this.first;
+        if(node ===null)
+        {
+            return true;
+        }
+        return false;
+    }
+
 }
 
 module.exports = Queue;
