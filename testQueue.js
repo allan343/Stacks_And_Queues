@@ -10,7 +10,7 @@ function displayQueue(ls){
         console.log(currNode.value);
         currNode=currNode.next;
     }
-    
+    console.log(currNode.value);
     }
 
 function QueueStuff(){
