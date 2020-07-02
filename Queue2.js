@@ -16,7 +16,7 @@ class Queue2 {
             const node = new _Node(data);
 
             if (this.last) {
-                prevNode= this.last;
+              let prevNode= this.last;
                 this.last.next = node;
                 this.last=node;
                 this.last.prev=prevNode
